@@ -1,0 +1,2 @@
+# animated-ball
+infinite loop

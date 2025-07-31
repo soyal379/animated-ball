@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me Na Manu Kisi Ki Baat</title>
+    <style>
+        body {
+            background-color: #a29494;
+        }
+
+        .box {
+            width: 90vw;
+            height: 60vh;
+            margin: 120px auto;
+            background-color: #9469bf;
+            position: relative;
+        }
+
+        .box .ball {
+            width: 80px;
+            height: 80px;
+            background-color: rgb(211, 63, 18);
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: animateX 5s  1ms infinite alternate-reverse,
+                       animateY 3s linear 1ms infinite alternate-reverse;
+        }
+
+        @keyframes animateX {
+            from {
+                left: 0%;
+            }
+
+            to {
+                left: 94%;
+            }
+        }
+
+        @keyframes animateY {
+            from {
+                bottom: 0%;
+            }
+
+            to {
+                bottom: 81%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div id="add" class="ball"></div>
+    </div>
+</body>
+
+</html>
